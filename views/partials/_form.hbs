@@ -1,0 +1,18 @@
+  {{!-- title --}}
+<div class="mb-3">
+  <label for="title" class="form-label">Title</label>
+  <input type="text" class="form-control" id="title" style="width:95%;margin:auto;" value="{{blogs.title}}" required>
+</div>
+  {{!-- Description --}}
+<div class="mb-3">
+  <label for="desc" class="form-label">Description</label>
+  <textarea style="height:150px;width:95%;margin:auto;" class="form-control" id="desc" required>{{blogs.desc}}</textarea>
+</div>
+  {{!-- Markdown --}}
+<div class="mb-3">
+  <label for="md" class="form-label">Markdown</label>
+  <textarea style="height:180px;width:95%;margin:auto;" class="form-control" id="md" required>{{blogs.markdown}}</textarea>
+</div>
+{{!-- Submit and Cancel Buttons --}}
+<a href="/blogs" class="btn btn-danger">Cancel</a>
+<button type="submit" class="btn btn-primary">Create</button>
